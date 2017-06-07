@@ -18,4 +18,4 @@ RUN apt-get update \
     && rm -rf /var/log/alternatives.log \
     && chmod +x /start.sh
 
-ENV GIT_SYNC_POST_PULL composer update --no-dev --ignore-platform-reqs -o -n
+ENV GIT_SYNC_POST_PULL composer install --no-dev --ignore-platform-reqs -o -n
